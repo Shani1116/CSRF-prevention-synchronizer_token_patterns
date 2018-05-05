@@ -4,12 +4,10 @@ session_start();
 include 'csrf.class.php';
  
 $csrf = new csrf();
- 
- 
+  
 // Generate Token Id and Valid
 $token_id = $csrf->get_token_id();
 $token_value = $csrf->get_token($token_id);
-
  
 ?>
 
